@@ -1,0 +1,156 @@
+body {
+	font-family: 'Titillium Web', sans-serif, Arial;
+}
+.card ,.na {
+	margin-top: 30px!important;
+
+}
+.na {
+	margin-bottom: 30px!important;
+}
+
+/* @media (min-width: 992px){
+  .col-md-4 {
+      width: 33.33333333%;
+  }
+} */
+@media (max-width: 767px){
+
+	.hidden-xs {
+	    display: none!important ;
+	}
+}
+@media (max-width: 767px){
+
+	.offset-2, .offset-3 {
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+}
+.brand-logo {
+	margin-left: 600px;
+	margin-top: 15px;
+}
+@media (max-width: 767px){
+
+	.brand-logo {
+	   
+	    margin-right: auto;
+    	margin-left: auto;
+	}
+	.new-link {
+	margin-left: 100px!important;
+	}
+	.new-link2 {
+	margin-left: auto;
+	margin-right: auto;
+	}
+	.container {
+		padding-right: 0px!important;
+    	padding-left: 0px!important;
+    	margin-right: auto;
+    	margin-left: auto;
+	}
+}
+@media (min-width: 992px){
+	.brand-logo {
+	   
+	    margin-right: auto;
+    	margin-left: auto;
+	}
+}
+@media (min-width: 768px){
+	.brand-logo {
+	   
+	    margin-right: auto;
+    	margin-left: auto;
+	}
+}
+.bg-light {
+    background-color: #f8f9fa00!important;
+}
+.wrapper {
+	background-color: #1c4169;
+}
+.logo-text {
+    color: #f37951!important;
+}
+.new-link {
+	margin-left: 150px;
+}
+
+/*css for double signup button trigger*/
+/**, *:before, *:after {
+  box-sizing: border-box;
+}*/
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+  /*&:after {
+    content: "";
+    display: table;*/
+    /*clear: both;*/
+  }
+  li a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    background:rgba(grey,.25);
+    color: black;
+    font-size:20px;
+    float:left;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+    &:hover {
+      background: green;
+      color: white;
+    }
+  }
+  .active a {
+    background: #1c4169;
+    color: #ffffff;
+  }
+
+
+/*.tab-content > div:last-child {
+   display:none;
+ }*/
+
+/*end css for double signup button trigger*/
+/*Preloader*/
+#loader {
+  background: #fafafa52;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+
+#loaderInner {
+  background:#ffffff url(../../images/spinner.gif) center center no-repeat;
+  height: 60px;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  box-shadow:0 0 8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}

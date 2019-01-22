@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Ulterpay User Dashboard" />
+		<meta name="keywords" content="Admin, Dashboard, Bootstrap3, Sass, transform, CSS3, HTML5, Web design, UI Design, Responsive Dashboard, Responsive Admin, Admin Theme, Best Admin UI, Bootstrap Theme, Themeforest, Bootstrap, C3 Graphs, D3 Graphs, NVD3 Graphs, Admin Skin, Black Admin Dashboard, Grey Admin Dashboard, Dark Admin Dashboard, Simple Admin Dashboard, Simple Admin Theme, Simple Bootstrap Dashboard, Invoice, Tasks, Profile" />
+		<meta name="author" content="Solomon Osaighe" />
+		<link rel="shortcut icon" href="img/ulterpay-logo.png">
+		<title>Ulterpay - Dashboard</title>
+		
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+
+		<!-- Main CSS -->
+		<link href="css/main.css" rel="stylesheet" media="screen" />
+
+		<!-- Ion Icons -->
+		<link href="fonts/icomoon/icomoon.css" rel="stylesheet" />
+		
+		<!-- Circliful CSS -->
+		<link rel="stylesheet" href="css/circliful/circliful.css" />
+		
+		<!-- Projects CSS -->
+		<link href="css/projects.css" rel="stylesheet" media="screen" />
+
+		<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+		<!-- Loading starts -->
+		<div class="loading-wrapper">
+			<div class="loading">
+				<h5>Loading...</h5>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<!-- Loading ends -->
+		<!-- Header starts -->
+		<header>
+
+			<!-- Logo starts -->
+			<a href="index.html" class="logo">
+				<img src="img/ulterpay-logo.png" width="80%" height="40" alt="Ulterpay Dashboard Logo" />
+			</a>
+			<!-- Logo ends -->
+
+			<!-- Header actions starts -->
+			<ul id="header-actions" class="clearfix">
+				<li class="list-box hidden-xs dropdown">
+					<a id="drop2" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-warning2"></i>
+					</a>
+					<span class="info-label blue-bg">5</span>
+					<ul class="dropdown-menu imp-notify">
+						<li class="dropdown-header">You have 3 notifications</li>
+						<li>
+							
+							<div class="details">
+								<strong class="text-danger">Michael Phelps</strong>
+								<span>Firefox is a free, open-source web browser from Mozilla.</span>
+							</div>
+						</li>
+						<li>
+							
+							<div class="details">
+								<strong class="text-success">Derek Jeter</strong>
+								<span>IE is a free web browser from Microsoft.</span>
+							</div>
+						</li>
+						<li>
+							
+							<div class="details">
+								<strong class="text-info">Warren Buffett</strong>
+								<span>Safari is known for its sleek design and ease of use.</span>
+							</div>
+						</li>
+						<li class="dropdown-footer">See all the notifications</li>
+					</ul>
+				</li>
+				<li class="list-box user-admin hidden-xs dropdown">
+					<div class="admin-details">
+						<div class="name">Sean</div>
+					</div>
+					<a id="drop4" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-user"></i>
+					</a>
+					<ul class="dropdown-menu sm">
+						<li class="dropdown-content">
+							<a href="profile.html">Profile</a>
+							<a href="login.html">Logout</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<button type="button" id="toggleMenu" class="toggle-menu">
+						<i class="collapse-menu-icon"></i>
+					</button>
+				</li>
+			</ul>
+			<!-- Header actions ends -->
+
+			<div class="custom-search hidden-sm hidden-xs">
+				<input type="text" class="search-query" placeholder="Search here ...">
+				<i class="icon-search3"></i>
+			</div>
+		</header>
+		<!-- Header ends -->
+
+		<!-- Left sidebar start -->
+		<div class="vertical-nav">
+
+			<!-- Collapse menu starts -->
+			<button class="collapse-menu">
+				<i class="icon-menu2"></i>
+			</button>
+			<!-- Collapse menu ends -->
+
+			<!-- Current user starts -->
+			<div class="user-details clearfix">
+				<!-- <a href="profile.html" class="user-img">
+					<i class="icon-user2"></i>
+					<span class="likes-info">9</span>
+				</a> -->
+				<h5 class="user-name">Sean</h5>
+			</div>
+			<!-- Current user ends -->
+
+			<!-- Sidebar menu start -->
+			<ul class="menu clearfix">
+				<li class="active selected">
+					<a href="#">
+						<i class="icon-air-play"></i>
+						<span class="menu-item">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-lab3"></i>
+						<span class="menu-item">Send Money</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						
+						<li>
+							<a href='transfer-to-local-bank.html'>Send To Local Bank</a>
+						</li>
+						<li>
+							<a href='transfer-to-ulterpay-user.html'>Send To Ulterpay Account</a>
+						</li>
+						<!-- <li>
+							<a href='project-list.html'>Project List</a>
+						</li> -->
+					</ul>
+				</li>
+				<li>
+					<a href='buy-airtime.html'>
+						<i class="icon-calendar7"></i>
+						<span class="menu-item">Buy Airtime</span>
+					</a>
+				</li>
+				<li>
+					<a href='pay-bills.html'>
+						<i class="icon-colours"></i>
+						<span class="menu-item">Pay Bills</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-dots-three-horizontal"></i>
+						<span class="menu-item">More</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='profile.html'>User Profile</a>
+						</li>
+						<!-- <li>
+							<a href='blog.html'>Blog</a>
+						</li>
+						<li>
+							<a href='invoice.html'>Invoice</a>
+						</li>
+						<li>
+							<a href='timeline.html'>Timeline</a>
+						</li>
+						<li>
+							<a href="pricing.html">Pricing</a> 
+						</li> -->
+					</ul>
+				</li>
+				
+			</ul>
+			<!-- Sidebar menu snd -->
+		</div>
+		<!-- Left sidebar end -->
+
+		<!-- Dashboard Wrapper Start -->
+		<div class="dashboard-wrapper dashboard-wrapper-lg">
+
+			<!-- Container fluid Starts -->
+			<div class="container-fluid">
+				
+				<!-- Top Bar Starts -->
+				<div class="top-bar clearfix">
+					<div class="row gutter">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<div class="page-title">
+								<h3>Dashboard</h3>
+								<p>welcome to ulterpay dashboard</p>
+							</div>
+						</div>
+						<!-- -->
+					</div>
+				</div>
+				<!-- Top Bar Ends -->
+
+				<!-- Row starts -->
+				<div class="row gutter">
+					<div class="row">
+						<div style="margin-bottom:20px;" class="col-md-4 col-sm-4 col-xs-12">
+							<div class="project-block">
+								<a href="#" >
+									
+									<h5 class="project-name">Account Balance</h5>
+									<ul class="project-time clearfix">
+										<li style="margin-left:50px;">
+											<h3 style="font-size:40px;">0</h3 >
+											<p style="font-size:18px;">Available</p>
+										
+											
+										</li>
+									</ul>
+								</a>
+								<ul class="project-footer clearfix">
+									<div class="row gutter">
+										<div class="col-md-12">
+											<div class="col-md-4 hidden-lg hidden-md"></div>
+											<div class="col-md-8">
+												<div style="" class="stats-info">
+													<a href="fund-account.html">
+													
+														<button style="border-radius:10px;" class="btn btn-info"><i class="icon-stack"> </i> Click To Fund Account</button>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</ul>
+							</div>
+						</div>
+
+						<div style="margin-bottom:20px;" class="col-md-4 col-sm-4 col-xs-12">
+							<a href="#" class="project-block">
+								
+								<h5 class="project-name">Saved Payments</h5>
+								<ul class="project-time clearfix">
+									<li>
+										<h3 style="font-size:40px;">0</h3>
+										<p style="font-size:18px;">Airtime</p>
+									</li>
+									<li>
+										<h3 style="font-size:40px;">0</h3>
+										<p style="font-size:18px;">Bills</p>
+									</li>
+								</ul>
+								<ul class="project-footer clearfix">
+									<li>
+										<div class="stats-infos">
+											<span style="font-size:40px;" class="icon-users text-danger">0</span>  Transfers
+											
+										</div>
+									
+										
+									</li>
+								</ul>
+							</a>
+						</div>
+						<div style="margin-bottom:20px;" class="col-md-4 col-sm-4 col-xs-12">
+							<a href="#" class="project-block">
+								<h5 class="project-name">Transaction History</h5>
+								<ul class="project-time clearfix">
+									<li>
+																			
+										<div class="stats-infos">
+											<h3 style="font-size:40px;">0</h3>
+											<p>Transactions</p>
+										</div>
+										<div class="stats-infos">
+											<p id="sh"></p>
+										</div>
+									</li>
+								</ul>
+								<ul class="project-footer clearfix">
+									<li>
+										<div class="stats-infos">
+											<h3><span style="font-size:40px;" class="icon-line-graph text-info"></span></h3>
+											<p>Check Status</p>
+											
+										</div>
+									
+										
+									</li>
+								</ul>
+							</a>
+						</div>
+						
+					</div>
+					<div class="row">
+						<div style="margin-bottom:20px;" class="col-md-4 col-sm-4 col-xs-12">
+							<a href="#" class="project-block">
+								
+								<h5 class="project-name">Recurrent Transactions</h5>
+								<ul class="project-time clearfix">
+									<li>
+										<h3><span style="font-size:40px;" class="icon-calendar4"></span></h3>
+										<p style="font-size:18px;">0 Transaction</p>
+									</li>
+									
+								</ul>
+								
+							</a>
+						</div>
+						<div style="margin-bottom:20px;" class="col-md-4 col-sm-4 col-xs-12">
+							<div class="project-block">
+								<a href="#" class="">
+									<!-- <p class="project-type">coming soon</p> -->
+									<h5 class="project-name">Withdraw Money</h5>
+									<ul class="project-time clearfix">
+										<li style="margin-left:50px;">
+											<h3 style="font-size:40px;">0</h3 >
+											<p style="font-size:18px;">Available</p>
+										
+											
+										</li>
+									</ul>
+								</a>
+
+									<ul class="project-footer clearfix">
+										<div class="row gutter">
+											<div class="col-md-12">
+												<div class="col-md-4 hidden-lg hidden-md"></div>
+												<div class="col-md-8">
+													<div class="stats-info">
+														
+														<a href="withdraw-money.html" >
+															<button type="submit" style="border-radius:10px;" class="btn btn-info"><i class="icon-stack"> </i> Click To Withdraw Money</button> 
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</ul>
+								
+							</div>
+						</div>
+
+						<div style="margin-bottom:20px;" class="col-md-4 col-sm-4 col-xs-12">
+							<a href="#"  class="project-block transparent-bdr">
+								<p class="project-type">coming soon</p>
+								<h5 class="project-name">coming soon</h5>
+								<ul class="project-time clearfix">
+									<li>
+										<h3>100<sup>%</sup></h3>
+										<p>Completed</p>
+									</li>
+									<li>
+										<h3>0</h3>
+										<p>Days Left</p>
+									</li>
+								</ul>
+								<ul class="project-footer clearfix">
+									<li>
+										<div class="stats-infos">
+											<i class="icon-use text-danger"></i> 31
+										</div>
+									</li>
+									<li>
+										<div class="stats-infos">
+											<i class="icon-briefcase2 text-success"></i> 76
+										</div>
+									</li>
+									<li>
+										<div class="stats-infos">
+											<i class="icon-line-graph text-info"></i> 21
+										</div>
+									</li>
+								</ul>
+								<div class="completed-project"></div>
+								<span class="project-btn completed">
+									Completed
+								</span>
+							</a>
+						</div>
+					</div>
+					
+				</div>
+				<!-- Row ends -->
+
+			</div>
+			<!-- Container fluid ends -->
+			
+		</div>
+		<!-- Dashboard Wrapper End -->
+
+		<!-- Footer Start -->
+		<footer>
+			Copyright &copy; Ulterpay <span id="th"></span>
+		</footer>
+		<!-- Footer end -->
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.js"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Sparkline Graphs -->
+		<!-- <script src="js/sparkline/sparkline.js"></script> -->
+		<script src="js/sparkline/retina.js"></script>
+		<script src="js/sparkline/custom-sparkline.js"></script>
+		
+		<!-- jquery ScrollUp JS -->
+		<script src="js/scrollup/jquery.scrollUp.js"></script>
+
+		<!-- D3 JS -->
+		<script src="js/d3/d3.v3.min.js"></script>
+
+		<!-- D3 Power Gauge -->
+		<script src="js/d3/d3.powergauge.js"></script>
+
+		<!-- D3 Meter Gauge Chart -->
+		<script src="js/d3/gauge.js"></script>
+		<script src="js/d3/gauge-custom.js"></script>
+		
+		<!-- C3 Graphs -->
+		<script src="js/c3/c3.min.js"></script>
+		<script src="js/c3/c3.custom.js"></script>
+
+		<!-- Horizontal Bar JS -->
+		<script src="js/horizontal-bar/horizBarChart.min.js"></script>
+		<script src="js/horizontal-bar/horizBarCustom.js"></script>
+
+		<!-- Gauge Meter JS -->
+		<script src="js/gaugemeter/gaugeMeter-2.0.0.min.js"></script>
+		<script src="js/gaugemeter/gaugemeter.custom.js"></script>
+
+		<!-- Peity JS -->
+		<script src="js/peity/peity.min.js"></script>
+		<script src="js/peity/custom-peity.js"></script>
+
+		<!-- Circliful js -->
+		<script src="js/circliful/circliful.min.js"></script>
+		<script src="js/circliful/circliful.custom.js"></script>
+
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+		<script>
+			var d = new Date();
+			var months = ["January","February","March","April","May","June","July","August","September","October","November","December"]; 
+			var month = months[d.getMonth()];
+			var day = d.getDate();
+			var year = d.getFullYear();
+			document.getElementById("sh").innerHTML=month +" "+""+day+","+" "+year;
+			document.getElementById("th").innerHTML=year;
+		</script>
+	</body>
+</html>
